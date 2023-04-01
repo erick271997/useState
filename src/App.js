@@ -1,6 +1,7 @@
 
-import './App.css';
+import './estilo/App.css';
 import { useState } from 'react';
+import NextTexto from './componete/NextTexto';
 
 function App() { 
   const [nombre, SetNombre]= useState('jab');
@@ -71,6 +72,7 @@ Setresultado(Number (Numero1)+ Number (Numero2));
       <input type='number' value={resultado} readOnly/>
       <button onClick={sumar} className='suma' >Sumar</button>
      </div>
+     <NextTexto/>
  </div>
   );
 }
